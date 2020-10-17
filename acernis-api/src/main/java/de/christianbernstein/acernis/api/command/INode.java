@@ -1,6 +1,4 @@
-package de.christianbernstein.acernis.api.command.api;
-
-import de.christianbernstein.acernis.api.command.Visibility;
+package de.christianbernstein.acernis.api.command;
 
 import java.util.List;
 

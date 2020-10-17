@@ -1,4 +1,4 @@
-package de.christianbernstein.acernis.api.command.api;
+package de.christianbernstein.acernis.api.command;
 
 import java.util.UUID;
 

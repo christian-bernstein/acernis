@@ -1,8 +1,5 @@
 package de.christianbernstein.acernis.api.command;
 
-import de.christianbernstein.acernis.api.command.api.IExecutor;
-import de.christianbernstein.acernis.api.command.api.INode;
-import de.christianbernstein.acernis.api.command.api.IParameters;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NonNull;

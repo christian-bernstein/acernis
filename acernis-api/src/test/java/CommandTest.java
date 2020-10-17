@@ -2,11 +2,9 @@ import de.christianbernstein.acernis.api.command.Node;
 import de.christianbernstein.acernis.api.command.NodeDeclaration;
 import de.christianbernstein.acernis.api.command.Parameters;
 import de.christianbernstein.acernis.api.command.Visibility;
-import de.christianbernstein.acernis.api.command.api.IConductor;
-import de.christianbernstein.acernis.api.command.api.INode;
+import de.christianbernstein.acernis.api.command.INode;
 
 import java.util.Arrays;
-import java.util.UUID;
 
 /**
  * @author Christian Bernstein

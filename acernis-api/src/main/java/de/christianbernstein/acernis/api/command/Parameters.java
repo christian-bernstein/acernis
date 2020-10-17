@@ -1,7 +1,5 @@
 package de.christianbernstein.acernis.api.command;
 
-import de.christianbernstein.acernis.api.command.api.IParam;
-import de.christianbernstein.acernis.api.command.api.IParameters;
 import lombok.Builder;
 
 import java.lang.reflect.Type;
