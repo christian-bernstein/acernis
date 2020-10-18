@@ -1,4 +1,4 @@
-package de.christianbernstein.acernis.api.command.util;
+package de.christianbernstein.acernis.api.command;
 
 /**
  * Represents a simple parser. (This is a separate interface from {@link java.util.function.Function} for clarity)

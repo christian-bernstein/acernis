@@ -1,7 +1,5 @@
 package de.christianbernstein.acernis.api.command;
 
-import de.christianbernstein.acernis.api.command.util.IDocument;
-
 import java.lang.reflect.Type;
 import java.math.BigDecimal;
 import java.math.BigInteger;

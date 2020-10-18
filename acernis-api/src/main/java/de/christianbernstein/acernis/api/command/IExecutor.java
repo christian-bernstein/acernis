@@ -1,16 +1,17 @@
 package de.christianbernstein.acernis.api.command;
 
-import de.christianbernstein.acernis.api.command.util.IDocument;
 import lombok.NonNull;
 
 import java.util.Properties;
 
 /**
+ * The actual executor for a command, which get wrapped into a {@link INode}.
+ *
  * @author Christian Bernstein
  */
 @FunctionalInterface
 public interface IExecutor {
 
-    void execute(@NonNull IConductor conductor, @NonNull IDocument parameters, @NonNull Properties properties, @NonNull String raw);
+    void execute(@NonNull IContext context);
 
 }

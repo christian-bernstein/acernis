@@ -1,6 +1,5 @@
 package de.christianbernstein.acernis.api.command;
 
-import de.christianbernstein.acernis.api.command.util.IDocument;
 
 import java.util.List;
 

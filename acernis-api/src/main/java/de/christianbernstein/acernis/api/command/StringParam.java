@@ -1,4 +1,4 @@
-package de.christianbernstein.acernis.api.command.parameter;
+package de.christianbernstein.acernis.api.command;
 
 import lombok.Builder;
 import lombok.NonNull;
