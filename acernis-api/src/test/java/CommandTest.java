@@ -1,6 +1,5 @@
 import de.christianbernstein.acernis.api.command.Node;
 import de.christianbernstein.acernis.api.command.NodeDeclaration;
-import de.christianbernstein.acernis.api.command.Parameters;
 import de.christianbernstein.acernis.api.command.Visibility;
 import de.christianbernstein.acernis.api.command.INode;
 
@@ -11,6 +10,7 @@ import java.util.Arrays;
  */
 public class CommandTest {
 
+    // Medium configured node
     @NodeDeclaration
     public static final INode echoNode = Node.builder()
             .literal("echo")
@@ -20,8 +20,14 @@ public class CommandTest {
             .permission("echo.basic")
             .confirmationReliant(false)
             .visibility(Visibility.PUBLIC)
-            .parameters(Parameters.builder().build())
             .executor((conductor, parameters, properties, raw) -> System.out.println("" + parameters.get("message")))
+            .build();
+
+    // Minimum configured node
+    @NodeDeclaration
+    public static final INode helpNode = Node.builder()
+            .literal("help")
+            .executor((conductor, parameters, properties, raw) -> System.out.println("Cool help page"))
             .build();
 
     public static void main(String[] args) {

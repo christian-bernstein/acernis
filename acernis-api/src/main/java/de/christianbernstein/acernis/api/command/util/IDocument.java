@@ -1,4 +1,4 @@
-package de.christianbernstein.acernis.api.command;
+package de.christianbernstein.acernis.api.command.util;
 
 import java.lang.reflect.Type;
 import java.math.BigDecimal;
@@ -11,9 +11,7 @@ import java.util.function.Function;
 /**
  * @author Christian Bernstein
  */
-public interface IParameters {
-
-    List<IParam> getParams();
+public interface IDocument {
 
     String get(String key);
 

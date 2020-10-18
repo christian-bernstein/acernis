@@ -1,5 +1,7 @@
 package de.christianbernstein.acernis.api.command;
 
+import de.christianbernstein.acernis.api.command.util.IDocument;
+
 import java.util.List;
 
 /**
@@ -21,7 +23,7 @@ public interface INode {
 
     Visibility getVisibility();
 
-    IParameters getParameters();
+    IDocument getParameters();
 
     IExecutor getExecutor();
 }

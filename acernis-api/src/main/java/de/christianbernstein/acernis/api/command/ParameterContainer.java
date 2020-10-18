@@ -1,25 +1,15 @@
 package de.christianbernstein.acernis.api.command;
 
-import lombok.Builder;
+import de.christianbernstein.acernis.api.command.util.IDocument;
 
 import java.lang.reflect.Type;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Date;
-import java.util.List;
 import java.util.UUID;
 import java.util.function.Function;
 
-/**
- * @author Christian Bernstein
- */
-@Builder
-public class Parameters implements IParameters {
-
-    @Override
-    public List<IParam> getParams() {
-        return null;
-    }
+public class ParameterContainer implements IDocument {
 
     @Override
     public String get(String key) {

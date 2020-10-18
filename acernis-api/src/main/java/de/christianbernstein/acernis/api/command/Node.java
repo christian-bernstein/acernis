@@ -1,5 +1,6 @@
 package de.christianbernstein.acernis.api.command;
 
+import de.christianbernstein.acernis.api.command.util.IDocument;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NonNull;
@@ -8,6 +9,7 @@ import lombok.Singular;
 import java.util.List;
 
 /**
+ *
  * @author Christian Bernstein
  */
 @Data
@@ -36,7 +38,7 @@ public class Node implements INode {
     @Builder.Default
     private final Visibility visibility = Visibility.PUBLIC;
 
-    private final IParameters parameters;
+    private final IDocument parameters;
 
     @NonNull
     private final IExecutor executor;
