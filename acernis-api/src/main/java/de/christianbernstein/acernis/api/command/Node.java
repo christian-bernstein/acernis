@@ -1,10 +1,7 @@
 package de.christianbernstein.acernis.api.command;
 
 import de.christianbernstein.acernis.api.command.util.IDocument;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NonNull;
-import lombok.Singular;
+import lombok.*;
 
 import java.util.List;
 
@@ -14,16 +11,15 @@ import java.util.List;
  */
 @Data
 @Builder
+@ToString
 public class Node implements INode {
 
     @NonNull
     private final String literal;
 
-    @NonNull
     @Singular(ignoreNullCollections = true)
     private final List<String> aliases;
 
-    @NonNull
     @Singular(ignoreNullCollections = true)
     private final List<String> permissions;
 
@@ -40,6 +36,5 @@ public class Node implements INode {
 
     private final IDocument parameters;
 
-    @NonNull
     private final IExecutor executor;
 }
