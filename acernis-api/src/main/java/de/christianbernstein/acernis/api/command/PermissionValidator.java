@@ -1,4 +1,4 @@
-package de.christianbernstein.acernis.api.command.permissions;
+package de.christianbernstein.acernis.api.command;
 
 import java.util.Map;
 import java.util.function.Predicate;

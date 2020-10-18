@@ -1,4 +1,4 @@
-package de.christianbernstein.acernis.api.command.permissions;
+package de.christianbernstein.acernis.api.command;
 
 import lombok.*;
 

@@ -1,6 +1,8 @@
+package util;
+
 import de.christianbernstein.acernis.api.command.IConductor;
-import de.christianbernstein.acernis.api.command.permissions.Permissible;
-import de.christianbernstein.acernis.api.command.permissions.PermissionAttachment;
+import de.christianbernstein.acernis.api.command.Permissible;
+import de.christianbernstein.acernis.api.command.PermissionAttachment;
 
 import java.util.Set;
 import java.util.UUID;
