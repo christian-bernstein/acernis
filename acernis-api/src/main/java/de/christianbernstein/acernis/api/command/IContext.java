@@ -1,6 +1,6 @@
 package de.christianbernstein.acernis.api.command;
 
-import de.christianbernstein.acernis.api.command.parameters.IDocument;
+import de.christianbernstein.acernis.api.command.parameters.IContainer;
 import de.christianbernstein.acernis.api.internal.IParser;
 import lombok.NonNull;
 
@@ -19,13 +19,13 @@ public interface IContext {
      * Provides parameters for the command. Those parameters are validates, by a pattern
      * in the {@link INode}
      *
-     * @return IDocument instance
+     * @return IContainer instance
      */
     @NonNull
-    IDocument getParameters();
+    IContainer getParameters();
 
     @NonNull
-    IDocument getProperties();
+    IContainer getProperties();
 
     @NonNull
     String getRaw();

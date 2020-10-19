@@ -12,7 +12,7 @@ import java.nio.file.Path;
 import java.util.*;
 
 /**
- * The Gson implementation of IDocument class.
+ * The Gson implementation of IContainer class.
  * It includes simple append and remove operations, file reading and writing to
  * create simple configuration files
  */

@@ -1,17 +1,16 @@
 package de.christianbernstein.acernis.api.command.parameters;
 
-import java.lang.reflect.Type;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Date;
-import java.util.List;
+import java.util.Locale;
 import java.util.UUID;
 import java.util.function.Function;
 
 /**
  * @author Christian Bernstein
  */
-public interface IDocument {
+public interface IContainer {
 
     String get(String key);
 
@@ -41,8 +40,8 @@ public interface IDocument {
 
     BigInteger getBigInteger(String key);
 
-    <T> T asInstance(String id, Function<String, T> parser);
+    Locale getLocale(String key);
 
-    <T> T asInstance(Type type);
+    <T> T asInstance(String key, Function<String, T> parser);
 
 }

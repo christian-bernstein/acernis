@@ -1,6 +1,6 @@
 package de.christianbernstein.acernis.api.command;
 
-import de.christianbernstein.acernis.api.command.parameters.IDocument;
+import de.christianbernstein.acernis.api.command.parameters.IContainer;
 import de.christianbernstein.acernis.api.internal.JsonDocument;
 import lombok.*;
 
@@ -31,7 +31,7 @@ public class Node implements INode {
     @Builder.Default
     private final boolean confirmationReliant = false;
 
-    private final IDocument parameters;
+    private final IContainer parameters;
 
     private final IExecutor executor;
 

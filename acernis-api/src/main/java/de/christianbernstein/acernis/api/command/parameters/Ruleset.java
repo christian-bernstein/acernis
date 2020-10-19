@@ -1,5 +1,6 @@
 package de.christianbernstein.acernis.api.command.parameters;
 
+import de.christianbernstein.acernis.api.internal.Pair;
 import lombok.Builder;
 import lombok.Singular;
 
@@ -21,12 +22,16 @@ public class Ruleset implements IRuleset {
     }
 
     @Override
-    public boolean validate(List<String> parameters) {
+    public Pair<Boolean, List<CheckResult>> validate(List<String> parameters) {
+        boolean overallSuccess = true;
         int i = 0;
+        final List<CheckResult> results = new ArrayList<>();
         for (final IParameter rule : this.ruleset) {
             final String s1 = parameters.get(i);
-            rule.validate(s1);
+            final CheckResult result = rule.validate(s1);
+            if (!result.isSuccess()) overallSuccess = false;
+            results.add(result);
         }
-        return false;
+        return new Pair<>(overallSuccess, results);
     }
 }

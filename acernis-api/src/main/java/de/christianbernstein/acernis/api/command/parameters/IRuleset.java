@@ -1,5 +1,7 @@
 package de.christianbernstein.acernis.api.command.parameters;
 
+import de.christianbernstein.acernis.api.internal.Pair;
+
 import java.util.List;
 
 /**
@@ -9,6 +11,6 @@ public interface IRuleset {
 
     List<IParameter> getRuleset();
 
-    boolean validate(List<String> parameters);
+    Pair<Boolean, List<CheckResult>> validate(List<String> parameters);
 
 }

@@ -2,7 +2,8 @@ package de.christianbernstein.acernis.api.command.parameters;
 
 import lombok.Builder;
 import lombok.NonNull;
-import java.util.regex.Pattern;
+
+import java.util.Collections;
 
 @Builder
 public class StringParam implements IParameter {
@@ -10,8 +11,7 @@ public class StringParam implements IParameter {
     private final String regex;
 
     @Override
-    public boolean validate(@NonNull String param) {
-        if (regex == null) return true;
-        return Pattern.compile(this.regex).matcher(param).matches();
+    public CheckResult validate(@NonNull String param) {
+        return new CheckResult(true, Collections.emptyList(), "");
     }
 }
