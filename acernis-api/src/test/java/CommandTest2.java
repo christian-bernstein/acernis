@@ -49,7 +49,8 @@ public class CommandTest2 {
 
         try {
             System.out.println("found node = " + getNode(nodeTrees, Arrays.asList("util", "info", "time")).get());
-        }catch (final NoSuchElementException ignored){
+        }catch (final NoSuchElementException e){
+            System.err.println("An error raised: " + e.getLocalizedMessage());
         }
     }
 
@@ -74,7 +75,7 @@ public class CommandTest2 {
                 return Optional.empty();
             }
         }
-        return Optional.empty();
+        return Optional.of(currentNode.get().getNode());
     }
 
     @Builder

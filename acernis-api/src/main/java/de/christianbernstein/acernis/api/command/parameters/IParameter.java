@@ -1,4 +1,4 @@
-package de.christianbernstein.acernis.api.command;
+package de.christianbernstein.acernis.api.command.parameters;
 
 import lombok.NonNull;
 
@@ -6,7 +6,7 @@ import lombok.NonNull;
  * A parameter makes it easy manage parameters in commands, which had to be handled manually by the
  * executors. The process of handling input takes mostly the longest time, produces lots of repeating
  * code. The parameters try make safe commands creation easier for developers and those who read the code.
- *
+ * <p>
  * How to create an implementation:
  * If a parameter needs to be configured, all configurations should be made via a builder {@link lombok.Builder}.
  * Especially for realtime data, it might be worth considering to use {@link java.util.function.Supplier} as a way
@@ -23,9 +23,11 @@ public interface IParameter {
      * This feature is meant to make the creation of commands easier, because if it comes to an execution,
      * the parameters will be there and matching the requirements.
      *
-     * @param param The parameter, matching in position
-     * @return A value, if the input is a valid parameter
+     * @see CheckResult
+     *
+     * @param param The string parameter, matching in position
+     * @return A detailed report
      */
-    boolean validate(@NonNull String param);
+    CheckResult validate(@NonNull String param);
 
 }

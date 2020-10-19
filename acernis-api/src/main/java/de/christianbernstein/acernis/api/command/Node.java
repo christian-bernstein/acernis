@@ -1,5 +1,7 @@
 package de.christianbernstein.acernis.api.command;
 
+import de.christianbernstein.acernis.api.command.parameters.IDocument;
+import de.christianbernstein.acernis.api.internal.JsonDocument;
 import lombok.*;
 
 import java.util.List;
@@ -29,11 +31,10 @@ public class Node implements INode {
     @Builder.Default
     private final boolean confirmationReliant = false;
 
-    @NonNull
-    @Builder.Default
-    private final Visibility visibility = Visibility.PUBLIC;
-
     private final IDocument parameters;
 
     private final IExecutor executor;
+
+    @Builder.Default
+    private final JsonDocument meta = JsonDocument.newDocument();
 }

@@ -1,4 +1,4 @@
-package de.christianbernstein.acernis.api.command;
+package de.christianbernstein.acernis.api.command.parameters;
 
 import java.lang.reflect.Type;
 import java.math.BigDecimal;

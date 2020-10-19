@@ -1,6 +1,9 @@
 package de.christianbernstein.acernis.api.command;
 
 
+import de.christianbernstein.acernis.api.command.parameters.IDocument;
+import de.christianbernstein.acernis.api.internal.JsonDocument;
+
 import java.util.List;
 
 /**
@@ -20,9 +23,9 @@ public interface INode {
 
     boolean isConfirmationReliant();
 
-    Visibility getVisibility();
-
     IDocument getParameters();
 
     IExecutor getExecutor();
+
+    JsonDocument getMeta();
 }

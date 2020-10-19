@@ -1,4 +1,4 @@
-package de.christianbernstein.acernis.api.command;
+package de.christianbernstein.acernis.api.internal;
 
 /**
  * Represents a simple parser. (This is a separate interface from {@link java.util.function.Function} for clarity)
@@ -12,7 +12,7 @@ package de.christianbernstein.acernis.api.command;
  * @author Christian Bernstein
  */
 @FunctionalInterface
-public interface Parser<T, V>  {
+public interface IParser<T, V>  {
 
     /**
      * Get a instance of V, from a provided instance of T.
