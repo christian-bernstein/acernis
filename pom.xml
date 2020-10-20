@@ -11,6 +11,5 @@
 
     <modules>
         <module>acernis-api</module>
-        <module>spigot-1.16.3</module>
     </modules>
 </project>

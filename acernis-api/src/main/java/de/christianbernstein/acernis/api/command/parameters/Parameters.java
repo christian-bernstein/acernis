@@ -1,6 +1,5 @@
 package de.christianbernstein.acernis.api.command.parameters;
 
-import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 
 import java.math.BigDecimal;

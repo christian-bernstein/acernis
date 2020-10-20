@@ -7,7 +7,6 @@ import lombok.*;
 import java.util.List;
 
 /**
- *
  * @author Christian Bernstein
  */
 @Data
@@ -37,4 +36,7 @@ public class Node implements INode {
 
     @Builder.Default
     private final JsonDocument meta = JsonDocument.newDocument();
+
+    @Builder.Default
+    private final IContextCompiler contextCompiler = null;
 }

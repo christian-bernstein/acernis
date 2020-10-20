@@ -13,8 +13,8 @@ import java.util.List;
 @Builder
 public class Ruleset implements IRuleset {
 
-    @Singular
-    private final List<IParameter> ruleset = new ArrayList<>();
+    @Singular(value = "parameter")
+    private final List<IParameter> ruleset;
 
     @Override
     public List<IParameter> getRuleset() {
