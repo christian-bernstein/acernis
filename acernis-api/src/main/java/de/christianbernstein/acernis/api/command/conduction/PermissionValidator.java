@@ -1,4 +1,4 @@
-package de.christianbernstein.acernis.api.command;
+package de.christianbernstein.acernis.api.command.conduction;
 
 import java.util.Map;
 import java.util.function.Predicate;

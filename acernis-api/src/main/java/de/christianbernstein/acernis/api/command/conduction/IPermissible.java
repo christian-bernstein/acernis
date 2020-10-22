@@ -1,5 +1,6 @@
-package de.christianbernstein.acernis.api.command;
+package de.christianbernstein.acernis.api.command.conduction;
 
+import de.christianbernstein.acernis.api.command.conduction.PermissionAttachment;
 import lombok.NonNull;
 
 import java.util.List;

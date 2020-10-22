@@ -163,4 +163,9 @@ public class Parameters implements IContainer {
             return null;
         }
     }
+
+    @Override
+    public boolean obtainsData() {
+        return !this.storage.isEmpty();
+    }
 }

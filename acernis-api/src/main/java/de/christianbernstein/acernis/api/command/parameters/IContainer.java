@@ -1,5 +1,7 @@
 package de.christianbernstein.acernis.api.command.parameters;
 
+import lombok.NonNull;
+
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Date;
@@ -44,4 +46,6 @@ public interface IContainer {
 
     <T> T asInstance(String key, Function<String, T> parser);
 
+    @NonNull
+    boolean obtainsData();
 }

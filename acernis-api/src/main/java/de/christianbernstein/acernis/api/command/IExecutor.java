@@ -1,5 +1,6 @@
 package de.christianbernstein.acernis.api.command;
 
+import de.christianbernstein.acernis.api.command.node.INode;
 import lombok.NonNull;
 
 /**
@@ -10,6 +11,6 @@ import lombok.NonNull;
 @FunctionalInterface
 public interface IExecutor {
 
-    void execute(@NonNull IContext context);
+    void execute(@NonNull ICommandDispatchContext context);
 
 }

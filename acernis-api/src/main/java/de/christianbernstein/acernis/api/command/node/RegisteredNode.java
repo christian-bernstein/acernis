@@ -1,4 +1,4 @@
-package de.christianbernstein.acernis.api.command;
+package de.christianbernstein.acernis.api.command.node;
 
 import lombok.Builder;
 import lombok.Data;
@@ -6,17 +6,19 @@ import lombok.NonNull;
 import lombok.Singular;
 
 import java.util.Set;
-import java.util.function.Predicate;
 
 /**
  * @author Christian Bernstein
  */
 @Builder
 @Data
-public class RegisteredNode implements Predicate<String> {
+public class RegisteredNode implements IRegisteredNode {
 
     @NonNull
     private final INode node;
+
+    @NonNull
+    private final Set<String> stringNodes;
 
     @Singular(value = "child")
     private final Set<RegisteredNode> childNodes;

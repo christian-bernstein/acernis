@@ -1,4 +1,4 @@
-package de.christianbernstein.acernis.api.command;
+package de.christianbernstein.acernis.api.command.node;
 
 import java.util.List;
 import java.util.Optional;

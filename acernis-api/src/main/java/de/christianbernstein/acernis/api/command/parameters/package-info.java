@@ -3,7 +3,5 @@
  * The parameter system demands all indispensable parameters from the command. It validates the according
  * a special set of rules by the particular implementations of {@link de.christianbernstein.acernis.api.command.parameters.IParameter}.
  * This system was designed to reduce the amount of boilerplate code, that has to written in other command frameworks.
- *
- * @version %I%, %G%
  */
 package de.christianbernstein.acernis.api.command.parameters;

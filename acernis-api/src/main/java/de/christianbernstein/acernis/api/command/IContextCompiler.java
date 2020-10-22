@@ -1,10 +1,12 @@
 package de.christianbernstein.acernis.api.command;
 
+import de.christianbernstein.acernis.api.command.conduction.IConductor;
+
 /**
  * @author Christian Bernstein
  */
 public interface IContextCompiler {
 
-    IContext compile(IConductor conductor, String command);
+    ICommandDispatchContext compile(IConductor conductor, String command);
 
 }

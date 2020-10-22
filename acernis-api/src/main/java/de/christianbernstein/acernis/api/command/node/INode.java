@@ -1,12 +1,16 @@
-package de.christianbernstein.acernis.api.command;
+package de.christianbernstein.acernis.api.command.node;
 
 
+import de.christianbernstein.acernis.api.command.IContextCompiler;
+import de.christianbernstein.acernis.api.command.IExecutor;
 import de.christianbernstein.acernis.api.command.parameters.IContainer;
 import de.christianbernstein.acernis.api.internal.JsonDocument;
 
 import java.util.List;
 
 /**
+ * A node is an object for structuring the command tree.
+ *
  * @author Christian Bernstein
  */
 public interface INode {

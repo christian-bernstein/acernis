@@ -4,6 +4,7 @@ import de.christianbernstein.acernis.api.internal.CacheBuilder;
 import de.christianbernstein.acernis.api.internal.JCacheListener;
 
 import javax.cache.Cache;
+import javax.cache.configuration.Factory;
 import javax.cache.configuration.FactoryBuilder;
 import javax.cache.configuration.MutableConfiguration;
 import javax.cache.event.CacheEntryEvent;
