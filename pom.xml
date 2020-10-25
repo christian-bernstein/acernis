@@ -11,5 +11,6 @@
 
     <modules>
         <module>acernis-api</module>
+        <module>acernis-spigot-1.8.8</module>
     </modules>
 </project>

@@ -1,6 +1,6 @@
-import de.christianbernstein.acernis.api.command.parameters.IRuleset;
-import de.christianbernstein.acernis.api.command.parameters.Ruleset;
-import de.christianbernstein.acernis.api.command.parameters.StringParam;
+import de.christianbernstein.acernis.api.internal.command.parameters.IRuleset;
+import de.christianbernstein.acernis.api.internal.command.parameters.Ruleset;
+import de.christianbernstein.acernis.api.internal.command.parameters.StringParam;
 
 /**
  * @author Christian Bernstein

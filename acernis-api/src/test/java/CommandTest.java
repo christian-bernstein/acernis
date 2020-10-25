@@ -1,6 +1,6 @@
-import de.christianbernstein.acernis.api.command.node.INode;
-import de.christianbernstein.acernis.api.command.node.Node;
-import de.christianbernstein.acernis.api.command.node.NodeDeclaration;
+import de.christianbernstein.acernis.api.internal.command.node.INode;
+import de.christianbernstein.acernis.api.internal.command.node.Node;
+import de.christianbernstein.acernis.api.internal.command.node.NodeDeclaration;
 
 /**
  * @author Christian Bernstein

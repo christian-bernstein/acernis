@@ -1,0 +1,9 @@
+name: Acernis-Environemnt
+main: de.christianbernstein.acernis.spigot.v1_8_8.AcernisPlugin
+version: 0.0.1
+
+commands:
+  debug:
+    description: "Main debug command"
+    aliases: [acer, a]
+
