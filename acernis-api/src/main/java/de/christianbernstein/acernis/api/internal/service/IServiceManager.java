@@ -1,5 +1,7 @@
 package de.christianbernstein.acernis.api.internal.service;
 
+import lombok.NonNull;
+
 import java.util.Optional;
 
 /**
@@ -7,10 +9,11 @@ import java.util.Optional;
  */
 public interface IServiceManager {
 
-    IServiceManager appendService(Class<? extends Service> serviceClass);
+    IServiceManager appendService(@NonNull Class<? extends Service> serviceClass);
 
-    IServiceManager appendService(Class<? extends Service> serviceClass, Service service);
+    <T extends Service> IServiceManager appendService(@NonNull Class<T> serviceClass, @NonNull T serviceInstance);
 
-    <T extends Service> Optional<T> getService(Class<T> serviceClass);
+    <T extends Service> Optional<T> getService(@NonNull Class<T> serviceClass);
 
+    IEventManager getEventManager();
 }

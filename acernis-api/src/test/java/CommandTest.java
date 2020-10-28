@@ -14,10 +14,4 @@ public class CommandTest {
         .executor(context -> System.out.println("" + context.getParameters().get("message")))
         .build();
 
-
-
-    public static void main(String[] args) {
-
-    }
-
 }

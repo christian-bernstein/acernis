@@ -11,7 +11,7 @@ import java.io.Serializable;
 /**
  * @author Christian Bernstein
  */
-@Deprecated
+@Deprecated(forRemoval = true)
 @UtilityClass
 public class JCacheListener {
 

@@ -17,7 +17,7 @@ import java.util.Objects;
 /**
  * @author Christian Bernstein
  */
-@Deprecated
+@Deprecated(forRemoval = true)
 public class CacheBuilder<T, V> {
 
     private String id;
