@@ -15,7 +15,6 @@ import java.util.Map;
 @UtilityClass
 public class DocumentUtils {
 
-    //todo test method
     /**
      * A simple utility method to add default values to an existing document. This method find its usage, when
      * default values should be applied without wiping existing values. Otherwise {@link IDocument#append(Map)} should

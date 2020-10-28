@@ -6,10 +6,6 @@ import de.christianbernstein.acernis.api.internal.service.events.ServiceEnableEv
  */
 public class ServiceEventTest {
 
-    public static void main(String[] args) {
-
-    }
-
     @ServiceMeta(id = "greeting_service")
     public static class GreetingService extends Service {
 

@@ -8,9 +8,8 @@ import java.time.Duration;
 
 /**
  * @author Christian Bernstein
- *
  */
-public interface IAcernisFramework extends Closeable {
+public interface ICommandFramework extends Closeable {
 
     /**
      * Prepares the command framework
