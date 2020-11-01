@@ -1,6 +1,6 @@
 import com.google.gson.GsonBuilder;
-import de.christianbernstein.acernis.api.internal.command.node.INode;
-import de.christianbernstein.acernis.api.internal.command.node.Node;
+import de.christianbernstein.acernis.command.node.INode;
+import de.christianbernstein.acernis.command.node.Node;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NonNull;

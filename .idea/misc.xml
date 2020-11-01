@@ -9,6 +9,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/acernis-spigot-1.8.8/pom.xml" />
         <option value="$PROJECT_DIR$/spigot-1.16.3/pom.xml" />
       </set>
     </option>

@@ -7,11 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="acernis-spigot-1.8.8" />
         <module name="acernis-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="acernis-spigot-1.8.8" target="8" />
       <module name="spigot-1.16.3" target="1.5" />
     </bytecodeTargetLevel>
   </component>

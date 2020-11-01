@@ -1,5 +1,5 @@
-import de.christianbernstein.acernis.api.internal.service.*;
-import de.christianbernstein.acernis.api.internal.service.events.ServiceEnableEvent;
+import de.christianbernstein.acernis.internal.service.*;
+import de.christianbernstein.acernis.internal.service.events.ServiceEnableEvent;
 
 /**
  * @author Christian Bernstein
