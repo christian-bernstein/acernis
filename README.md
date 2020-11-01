@@ -10,4 +10,4 @@ It uses a pre-parameter-validation concept for consigning the correct arguments 
   
 ### How to use
 The system is designed to be as simple as possible, however the wiki provides a detailed work-through on all the capabilities of the framework.
-  * ### GitHub Wiki: 
+  * ### GitHub Wiki: https://github.com/christian-bernstein/acernis/wiki
