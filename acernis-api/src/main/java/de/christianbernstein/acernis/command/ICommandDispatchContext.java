@@ -3,7 +3,7 @@ package de.christianbernstein.acernis.command;
 import de.christianbernstein.acernis.command.conduction.IConductor;
 import de.christianbernstein.acernis.command.node.INode;
 import de.christianbernstein.acernis.command.parameters.IContainer;
-import de.christianbernstein.acernis.internal.IParser;
+import de.christianbernstein.acernis.util.IParser;
 import lombok.NonNull;
 
 /**

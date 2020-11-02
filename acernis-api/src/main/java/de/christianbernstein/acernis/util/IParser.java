@@ -1,4 +1,4 @@
-package de.christianbernstein.acernis.internal;
+package de.christianbernstein.acernis.util;
 
 /**
  * Represents a simple parser. (This is a separate interface from {@link java.util.function.Function} for clarity)

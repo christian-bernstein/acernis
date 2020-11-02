@@ -1,6 +1,6 @@
 package de.christianbernstein.acernis.command.parameters;
 
-import de.christianbernstein.acernis.internal.Pair;
+import de.christianbernstein.acernis.util.Pair;
 
 import java.util.List;
 

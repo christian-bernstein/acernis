@@ -1,4 +1,4 @@
-package de.christianbernstein.acernis.internal;
+package de.christianbernstein.acernis.util;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;

@@ -1,4 +1,4 @@
-package de.christianbernstein.acernis.internal;
+package de.christianbernstein.acernis.util;
 
 import lombok.NonNull;
 import lombok.experimental.UtilityClass;

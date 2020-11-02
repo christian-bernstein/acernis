@@ -1,4 +1,4 @@
-package de.christianbernstein.acernis.api.node;
+package de.christianbernstein.acernis.util;
 
 import lombok.NonNull;
 
