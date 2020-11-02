@@ -1,6 +1,6 @@
-import de.christianbernstein.acernis.command.CommandFramework;
-import de.christianbernstein.acernis.command.node.INode;
-import de.christianbernstein.acernis.command.node.ReflectionObjectHolderNodeSource;
+import de.christianbernstein.acernis.CommandFramework;
+import de.christianbernstein.acernis.node.INode;
+import de.christianbernstein.acernis.node.ReflectionObjectHolderNodeSource;
 
 /**
  * @author Christian Bernstein
