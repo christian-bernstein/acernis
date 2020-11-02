@@ -21,15 +21,17 @@ import java.util.Set;
  * @author Christian Bernstein
  */
 @Builder
-public class ReflectionNodeSource implements INodeSource {
+public class ReflectionObjectHolderNodeSource implements INodeSource {
 
     /**
      * Stores the packages, which will be utilized for searching nodes.
      * If empty, {@link org.reflections.Reflections} will look through each package
      */
-    @Singular
+    @Singular(value = "pack")
+    @NonNull
     private final List<String> packages;
 
+    @NonNull
     private final Class<? extends INode> targetNodeClass;
 
     @Override
@@ -39,27 +41,27 @@ public class ReflectionNodeSource implements INodeSource {
         final Reflections reflections = new Reflections(new ConfigurationBuilder().setUrls(urls).setScanners(new SubTypesScanner(false)));
         final Set<Class<?>> types = reflections.getSubTypesOf(Object.class);
         final List<INode> nodes = new ArrayList<>();
-        System.out.println("nodes: " + nodes.toString());
         for (final Class<?> aClass : types) {
-            final List<Field> fields = Arrays.asList(aClass.getDeclaredFields().clone());
-            fields.forEach(field -> {
-                final INode node = this.validateAndConstructNode(field);
-                if (node != null){
-                    nodes.add(node);
+            final Field[] fields = aClass.getDeclaredFields().clone();
+            for (final Field field : fields) {
+                // Assert if the fields are valid nodes
+                if (!field.getType().equals(this.targetNodeClass)){
+                    continue;
                 }
-            });
+                if (!field.isAnnotationPresent(NodeDeclaration.class)){
+                    continue;
+                }
+                // Check the node clashes with a already registered node
+
+
+
+                // Construct the holder class
+
+
+                // Construct the nodes
+            }
 
         }
         return nodes;
-    }
-
-    private INode validateAndConstructNode(@NonNull final Field field){
-        if (!field.getType().equals(this.targetNodeClass)){
-            return null;
-        }
-        if (!field.isAnnotationPresent(NodeDeclaration.class)){
-            return null;
-        }
-        return null;
     }
 }
