@@ -3,7 +3,6 @@ package de.christianbernstein.acernis.node;
 import de.christianbernstein.acernis.IContextCompiler;
 import de.christianbernstein.acernis.IExecutor;
 import de.christianbernstein.acernis.parameters.IContainer;
-import de.christianbernstein.acernis.internal.JsonDocument;
 import lombok.*;
 
 import java.util.List;
@@ -35,9 +34,6 @@ public class Node implements INode {
     private final IContainer parameters;
 
     private final IExecutor executor;
-
-    @Builder.Default
-    private final JsonDocument meta = JsonDocument.newDocument();
 
     @Builder.Default
     private final IContextCompiler contextCompiler = null;

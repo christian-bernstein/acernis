@@ -4,7 +4,6 @@ package de.christianbernstein.acernis.node;
 import de.christianbernstein.acernis.IContextCompiler;
 import de.christianbernstein.acernis.IExecutor;
 import de.christianbernstein.acernis.parameters.IContainer;
-import de.christianbernstein.acernis.internal.JsonDocument;
 
 import java.util.List;
 
@@ -30,8 +29,6 @@ public interface INode {
     IContainer getParameters();
 
     IExecutor getExecutor();
-
-    JsonDocument getMeta();
 
     /**
      * Certain commands can rely on a custom context compiler.

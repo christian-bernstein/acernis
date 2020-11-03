@@ -11,6 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="acernis-examples" target="1.5" />
       <module name="acernis-spigot-1.8.8" target="8" />
       <module name="spigot-1.16.3" target="1.5" />
     </bytecodeTargetLevel>
